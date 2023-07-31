@@ -167,9 +167,7 @@ contract RockyToken is Context, IERC20, Ownable {
     uint256 private _marketingFee = 2;
     uint256 private _lpFee = 2;
 
-    ///after how many buy sell should redue to final tax
-    uint256 private _reduceBuyTaxAt = 15;
-    uint256 private _reduceSellTaxAt = 15;
+    // build volume before swapping for liquidity
     uint256 private _preventSwapBefore = 10;
     uint256 private _buyCount = 0;
 
